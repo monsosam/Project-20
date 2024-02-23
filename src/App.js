@@ -1,3 +1,12 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 import logo from './logo.svg';
 import './App.css';
 
