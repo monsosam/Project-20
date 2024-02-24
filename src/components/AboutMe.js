@@ -1,8 +1,23 @@
 // In src/components/AboutMe.js
-import React from 'react';
+import React from "react";
+import "./AboutMe.css"; // Assuming you have a CSS file for styling
 
 function AboutMe() {
-  return <div>About Me</div>;
+  return (
+    <div className="aboutMe">
+      <img src="your-photo-url.jpg" alt="Your Name" className="aboutMe-photo" />
+      <h1>Samuel Monson</h1>
+      <p className="aboutMe-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
+  );
 }
 
 export default AboutMe;
