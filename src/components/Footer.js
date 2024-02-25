@@ -1,3 +1,6 @@
+import { faGithub, faLinkedin, faTwitter } from react-icons/fa
+
+
 function Footer() {
   const footerStyle = {
     backgroundColor: '#3d5a6c', 
@@ -14,13 +17,13 @@ function Footer() {
   return (
     <footer style={footerStyle}>
       <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={iconStyle}>
-        <FaGithub size={30} />
+        <faGithub size={30} />
       </a>
       <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style={iconStyle}>
-        <FaLinkedin size={30} />
+        <faLinkedin size={30} />
       </a>
       <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" style={iconStyle}>
-        <FaTwitter size={30} />
+        <faTwitter size={30} />
       </a>
     </footer>
   );
