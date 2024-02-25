@@ -4,7 +4,7 @@ This project was about designing and coding a developers portfolio using the rea
 
 ## Screenshot
 
-[Project-Screenshot](/src/assets/ReactPortfolio.png)
+![Project-Screenshot](/src/assets/ReactPortfolio.png)
 
 ## Link to Portfolio
 
