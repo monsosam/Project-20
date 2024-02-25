@@ -7,7 +7,7 @@
 }
 
 
-.App {
+body, html {
   text-align: left; 
   max-width: 1200px; 
   margin: 0 auto; 
@@ -37,5 +37,11 @@ nav a.active {
 /* Styles for the footer, keeping it simple and consistent with the header */
 footer { 
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+        padding: 20px;
+  }
 }
 

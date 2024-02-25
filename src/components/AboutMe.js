@@ -1,5 +1,6 @@
 // In src/components/AboutMe.js
 import React from "react";
+import profileImage from '../../assets/My Profile.jpg';
 
 function AboutMe() {
   // Inline styles
@@ -24,7 +25,7 @@ function AboutMe() {
 
   return (
     <div style={aboutMeStyle}>
-      <img src="your-photo-url.jpg" alt="Your Name" style={photoStyle} />
+      <img src={profileImage} alt="Your Name" style={photoStyle} />
       <h1>Samuel Monson</h1>
       <p style={bioStyle}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
