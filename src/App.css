@@ -1,35 +1,41 @@
+:root {
+  --jet: #433a3f;
+  --paynes-gray: #3d5a6c;
+  --cambridge-blue: #72a98f;
+  --light-green: #8de969;
+  --pear: #cbef43;
+}
+
+
 .App {
   text-align: left; 
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 20px; 
+  background-color: var(--jet);
+  color: var(--cambridge-blue);
 }
 
 /* Styles for the header, adjusted for a portfolio layout */
-header {
-  background-color: #333; 
-  color: #fff; 
+header, footer {
+  background-color: var(--paynes-gray); 
+  color: var(--light-green); 
   padding: 20px 0; 
 }
 
 nav a {
-  color: #fff; 
+  color: var(--pear); 
   margin: 0 10px; 
   text-decoration: none; 
   font-size: 18px; 
 }
 
 nav a.active {
-  border-bottom: 2px solid #61dafb; /* Adds a bottom border to the active link */
+  border-bottom: 2px solid var(--cambridge-blue); /* Adds a bottom border to the active link */
 }
 
 /* Styles for the footer, keeping it simple and consistent with the header */
-footer {
-  background-color: #333; 
-  color: #fff; 
-  padding: 20px 0; 
+footer { 
   text-align: center;
 }
-
-
 
