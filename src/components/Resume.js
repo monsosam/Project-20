@@ -4,7 +4,7 @@ function Resume() {
   return (
     <div>
       <h2>Resume</h2>
-      <p>Here's an overview of my professional background and skills.</p>
+      <p>Here is an overview of my professional background and skills.</p>
       
       <section>
         <h3>Skills</h3>
