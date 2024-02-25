@@ -1,6 +1,6 @@
 // In src/components/AboutMe.js
 import React from "react";
-import profileImage from '../../assets/My Profile.jpg';
+import profileImage from '../assets/My Profile.jpg';
 
 function AboutMe() {
   // Inline styles
