@@ -1,35 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Contact() {
   const [contactInfo, setContactInfo] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
+
+  const formStyle = {
+    color: "#433a3f", 
+    backgroundColor: "#72a98f", 
+    padding: "20px",
+    borderRadius: "5px",
+  };
+
+  const inputStyle = {
+    margin: "10px 0",
+    padding: "10px",
+    borderRadius: "5px",
+    border: `1px solid #433a3f`, 
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#cbef43", 
+    color: "#433a3f", 
+    padding: "10px 20px",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setContactInfo({
-      ...contactInfo,
-      [name]: value
-    });
+    setContactInfo((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you would typically handle the form submission, like sending an email or saving the data
     console.log(contactInfo);
-    alert('Thank you for your message!');
-    // Reset form fields
-    setContactInfo({
-      name: '',
-      email: '',
-      message: ''
-    });
+    alert("Thank you for your message!");
+    setContactInfo({ name: "", email: "", message: "" });
   };
 
   return (
-    <div>
+    <div style={formStyle}>
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -40,6 +57,7 @@ function Contact() {
             value={contactInfo.name}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
         <div>
@@ -50,6 +68,7 @@ function Contact() {
             value={contactInfo.email}
             onChange={handleChange}
             required
+            style={inputStyle}
           />
         </div>
         <div>
@@ -59,9 +78,12 @@ function Contact() {
             value={contactInfo.message}
             onChange={handleChange}
             required
+            style={inputStyle}
           ></textarea>
         </div>
-        <button type="submit">Send Message</button>
+        <button type="submit" style={buttonStyle}>
+          Send Message
+        </button>
       </form>
     </div>
   );

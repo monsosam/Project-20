@@ -12,17 +12,32 @@ const projects = [
 ];
 
 function Portfolio() {
+  const projectStyle = {
+    color: '#433a3f', 
+    margin: '10px',
+    textAlign: 'center',
+  };
+
+  const buttonStyle = {
+    backgroundColor: '#cbef43', 
+    color: '#433a3f', 
+    padding: '10px 20px',
+    margin: '10px 0',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  };
+
   return (
     <div>
       <h2>My Projects</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
         {projects.map((project, index) => (
-          <div key={index} style={{ width: '30%', margin: '10px', textAlign: 'center' }}>
+          <div key={index} style={projectStyle}>
             <img src={project.imageUrl} alt={project.title} style={{ width: '100%', height: 'auto' }} />
             <h3>{project.title}</h3>
-            <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer">View Project</a>
-            <br />
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer" style={buttonStyle}>View Project</a>
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" style={buttonStyle}>GitHub Repo</a>
           </div>
         ))}
       </div>

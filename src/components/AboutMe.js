@@ -8,6 +8,8 @@ function AboutMe() {
     textAlign: 'center', // Center aligns the content
     margin: '0 auto', // Automatically margins for horizontal centering
     maxWidth: '800px', // Sets a max width for the content
+    color: '#72a98f',
+    backgroundColor: '#433a3f',
   };
 
   const photoStyle = {
@@ -15,12 +17,14 @@ function AboutMe() {
     height: '150px', // Sets photo height
     borderRadius: '50%', // Makes the photo round
     objectFit: 'cover', // Ensures the photo covers the set dimensions without stretching
+    border: '5px solid #8de969',
   };
 
   const bioStyle = {
     fontSize: '1rem', // Sets the font size for the bio
     lineHeight: '1.5', // Sets the line height for readability
     margin: '20px 0', // Adds top and bottom margin for spacing
+    color: '#cbef43',
   };
 
   return (

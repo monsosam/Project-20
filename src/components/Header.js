@@ -7,23 +7,24 @@ function Header() {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '0 20px',
+    backgroundColor: '#3d5a6c',
   };
 
   const logoStyle = {
     textDecoration: 'none',
     fontWeight: 'bold',
     fontSize: '24px',
-    color: '#333', // Customize this color to fit your theme
+    color: '#8de969',
   };
 
   const linkStyle = {
     margin: '0 10px',
     textDecoration: 'none',
-    color: '#666', // Customize this color to fit your theme
+    color: '#8de969',
   };
 
   const activeStyle = {
-    color: '#000', // Customize this color to indicate active page
+    color: '#cbef43',
   };
 
   return (
