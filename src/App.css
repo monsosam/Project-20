@@ -12,8 +12,8 @@ body, html {
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 20px; 
-  background-color: var(--jet);
-  color: var(--cambridge-blue);
+  background-color: var(--cambridge-blue);
+  color: var(--jet);
 }
 
 /* Styles for the header, adjusted for a portfolio layout */
